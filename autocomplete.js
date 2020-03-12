@@ -28,4 +28,5 @@ function copytext(id){
       copyElement.select();
     document.execCommand('copy');
     copyElement.style.display = 'none';
+    event.preventDefault();
 }
