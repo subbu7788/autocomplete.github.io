@@ -2,8 +2,8 @@ autocom();
 function autocom(){
 let elements = document.querySelectorAll('input');
 [].slice.call(elements).forEach(function(ele) {  
-if(ele.type !=='hidden'){ 
-    if(ele.autocomplete==""){  
+if(ele.type ==='email' || ele.type ==='text' || ele.type ==='image' || ele.type ==='date' || ele.type ==='datetime-local' || ele.type ==='month' || ele.type ==='number' || ele.type ==='password' || ele.type ==='tel' || ele.type ==='url' || ele.type ==='week' ){
+    if(ele.autocomplete===""){  
         var dt = new Date();    
         var ids = "id"+dt.getTime()+ "_"+ Math.floor(Math.random()*1000);       
       ele.style.outline="#af4a00 solid 5px"    ;                        
