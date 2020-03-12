@@ -21,3 +21,11 @@ ele.insertAdjacentHTML("afterEnd"," <br>  <textarea  type='hidden' style='displa
     }
 });
 }
+
+function copytext(id){
+  var copyElement =document.querySelector('#'+ id +''); 
+  copyElement.removeAttribute('style');
+      copyElement.select();
+    document.execCommand('copy');
+    copyElement.style.display = 'none';
+}
