@@ -1,0 +1,7 @@
+{
+  "name": "autocomplete",
+  "title": "autocomplete",
+  "description": "JavaScript library for 1.3.5 guideline verifcation",
+  "version": "1.0",
+  "main": "autocomplete.js"
+  }
